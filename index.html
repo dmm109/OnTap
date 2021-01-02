@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html -->
+        <title>Tap List - The Beerded Brewer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" >
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
+    </head>
+
+    <body class="">
+
+        <!--
+            The Beerded Brewer Tap List
+
+            On Tap Section
+                List of 1-4 Beers displayed horizontally if large screen
+                    Type/Name of Beer
+                    ABV, OG & FG
+                    Malts
+                    Hops
+                    Yeast
+                    Dates, Brewed, Tapped, Kicked
+
+            Past Brews
+                List of all past beers displayed vertically
+        -->
+
+        <!-- Title Bar -->
+        <div class="w3-container w3-center w3-light-green">
+            <h1>The Beerded Brewer</h1>
+        </div>        
+
+        <!-- On Tap -->
+        <div class="w3-container w3-center w3-brown">
+            <h1>Tap List</h1>
+        </div>
+
+        <div class="w3-panel w3-row-padding">
+            <div class="w3-col m6 l3 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Coming Soon</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>0.0% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.050 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.010 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: 2 Row Pale Ale</br>
+                            <i>Hops</i>: Cascade, Columbus & Chinook</br>
+                            <i>Yeast</i>: Ale 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>12.3.21</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>12.3.21</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>12.3.21</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l3 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Coming Soon</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>0.0% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.050 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.010 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: 2 Row Pale Ale</br>
+                            <i>Hops</i>: Cascade, Columbus & Chinook</br>
+                            <i>Yeast</i>: Ale 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>12.3.21</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>12.3.21</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>12.3.21</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l3 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Chocolate Stout</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>#.#% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.043 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.0## FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            Stout Fermented on Cocoa Nibs</br>
+                            <i>Malts</i>: Pale Ale, Chocolate, Extra Dark Crystal, & Carafa 3</br>
+                            <i>Hops</i>: Cluster</br>
+                            <i>Yeast</i>: Safale S-04 Dry Ale Yeast</br>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>11.27.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>Fermenting!</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Fermenting!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l3 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Bitburger Pilsner</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>4.8% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.046 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.010 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: Unknown</br>
+                            <i>Hops</i>: Unknown</br>
+                            <i>Yeast</i>: Lager
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>Unknown</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>11.25.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>On tap!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div> 
+
+        <!-- Past Brews -->
+        <div class="w3-container w3-center w3-khaki">
+            <h1>Past Brews</h1>
+        </div>
+
+        <section class="w3-panel w3-row-padding">
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>New England IPA</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>5.6% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.055 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.012 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: Pale Ale & Flaked Oats</br>
+                            <i>Hops</i>: Cascade, Ariana, & Chinook</br>
+                            <i>Yeast</i>: Ale 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>11.7.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>11.19.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>12.23.20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Wit This Ring, I Thee Wed</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>6.9% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.055 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.002 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            Witbier</br>
+                            <i>Malts</i>: Pale Wheat, Pilsner & Flaked Oats</br>
+                            <i>Hops</i>: Hersbrucker</br>
+                            <i>Yeast</i>: WLP400 Belgian Wit Ale</br>
+                            <i>Other</i>: Coriander & Bitter Orange Peel
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>7.3.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>7.17.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Gone!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>As Lager We Both Shall Live</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>4.2% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.045 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.013 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            Vienna Lager</br>
+                            <i>Malts</i>: Pilsner, Vienna, Dark Munich & Carared</br>
+                            <i>Hops</i>: Northern Brewer & Saaz</br>
+                            <i>Yeast</i>: WLP840 American Lager Yeast  
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>3.14.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>3.30.20</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Gone!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--</section>
+        <section class="w3-panel w3-row-padding">-->
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Blonde Ale</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>5.7% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.058 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.014 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: 2 Row & Caramel</br>
+                            <i>Hops</i>: Cashmere</br>
+                            <i>Yeast</i>: WLP001 California Ale Yeast</br>
+                            <i>Other</i>: Gluten Reduced with White Labs Clarity Ferm 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>12.15.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>12.30.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Gone!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Chocolate Milk Stout</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>5.3% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.065 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.024 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            Fermented on Vietnamese Cocoa Nibs</br>
+                            <i>Malts</i>: Pale Ale, Chocolate, Extra Dark Crystal, & Carafa 3</br>
+                            <i>Hops</i>: Cluster</br>
+                            <i>Yeast</i>: WLP005 British Ale Yeast</br>
+                            <i>Other</i>: Lactose Sugar & Gluten Reduced with White Labs Clarity Ferm 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>10.27.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>11.8.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Gone!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m6 l4 w3-container">
+                <div class="w3-card">
+                    <div class="w3-container w3-center">
+                        <h3>Oktoberfest</h3>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>6.6% ABV</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.065 OG</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>1.014 FG</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i>Malts</i>: Munich, Pilsner, Crystal, Abby, & Biscuit</br>
+                            <i>Hops</i>: Tettnanger & Hallertau</br>
+                            <i>Yeast</i>: WLP820 Oktoberfest Marzen Lager Yeast</br>
+                            <i>Other</i>: Gluten Reduced with White Labs Clarity Ferm 
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third">
+                                <p>Brewed</br>8.30.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Tapped</br>9.13.19</p>
+                            </div>
+                            <div class="w3-third">
+                                <p>Kicked</br>Gone!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <div class="w3-container w3-center w3-light-green">
+            <h1>How The Beerded Brewer Works</h1>
+        </div> 
+
+        <section class="w3-row">
+            <div class="w3-quarter w3-container"></div>
+            <div class="w3-half w3-container w3-center">
+                <!--<h3>How The Beerded Brewer Works</h3>-->
+                <p> A need for wallet friendly and local craft beer was discovered after arriving in Frankfurt. So The Beerded Brewer 
+                    is stepping up it's game and working to meet this need!</br></br>
+                    To get your beer, reach out on WhatsApp to schedule a tasting time. Bring a clean growler to the tasting and donate 
+                    via Venmo. Your donation covers the cost of the brewing ingredients and equipment.
+                </p>
+                <p>WhatsApp</br><a href="https://wa.me/17402433992?text=Hey%20Beerded%20Brewer!%20When%20is%20your%20next%20available%20tasting?">1-740-243-3992</a></p>
+                <p>Venmo</br><a href="https://venmo.com/code?user_id=1838548437172224060">@Dave-Mitchell-6</a></p>
+
+                <h3>About The Beerded Brewer</h3>
+                <p>The beerded brewer has specialized in small batch craft beers since 2015. With each beer being a unique brew be sure 
+                    to jump on the ones you are interested in today.</p>
+            </div>
+            <div class="w3-quarter w3-container"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w3-black w3-padding w3-center">
+            <p>The Beerded Brewer &copy; 2021</p>
+        </footer>
+
+        <!--
+        <script>
+            function hamburgerFunction(id) {
+                var x = document.getElementById("demo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        -->
+
+    </body>
+</html>
