@@ -67,6 +67,41 @@
     <div class="w3-cell-row">
         <!-- Beer -->
         <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
+            <h3>Unknown</h3>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <p>#.#% ABV</p>
+                </div>
+                <div class="w3-half">
+                    <p>Up Next!</p>
+                </div>
+            </div>
+            <div>
+                <p>The next beer is to be decided.  Have a favorite style?  Let me know, it could be next!</p>
+            </div>
+            <button onclick="showHidden('notesUnknown')" class="w3-button w3-block">
+                <h6>Brewer's Notes</h6>
+            </button>
+            <div id="notesUnknown" class="w3-hide w3-container">
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <p>1.0## OG</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>1.0## FG</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Brewed</br>#.##.21</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Tapped</br>#.##.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Beer -->
+        <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
             <h3>Red Ale</h3>
             <div class="w3-row">
                 <div class="w3-half">
@@ -91,10 +126,45 @@
                         <p>1.0## FG</p>
                     </div>
                     <div class="w3-half">
-                        <p>Brewed</br>Planning!</p>
+                        <p>Brewed</br>4.18.21</p>
                     </div>
                     <div class="w3-half">
-                        <p>Tapped</br>Planning!</p>
+                        <p>Tapped</br>#.##.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Beer -->
+        <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
+            <h3>Wochenmarkt</h3>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <p>6.0% ABV</p>
+                </div>
+                <div class="w3-half">
+                    <p>On Tap!</p>
+                </div>
+            </div>
+            <div>
+                <p>Dripping with vivid flavors, Wochenmarkt is the beer equivalent of walking through a weekly German market. This mouth-watering IPA combines tantalizing aromas of grapefruit, melon, berries, lime and passion fruit that drizzle into a faint herbal, piney background. The malt foundation of 2-Row, Bonlander Munich, and Caramel combine with indulgent levels of Nugget, Citra and Mosaic hops to achieve remarkable balance.</p>
+            </div>
+            <button onclick="showHidden('notesFreshSquished')" class="w3-button w3-block">
+                <h6>Brewer's Notes</h6>
+            </button>
+            <div id="notesFreshSquished" class="w3-hide w3-container">
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <p>1.055 OG</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>1.009 FG</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Brewed</br>3.14.21</p>
+                    </div>
+                    <div class="w3-half">
+                        <p>Tapped</br>4.17.21</p>
                     </div>
                 </div>
             </div>
@@ -134,79 +204,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Beer -->
-        <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
-            <h3>German Chocolate Stout</h3>
-            <div class="w3-row">
-                <div class="w3-half">
-                    <p>4.1% ABV</p>
-                </div>
-                <div class="w3-half">
-                    <p>On Tap!</p>
-                </div>
-            </div>
-            <div>
-                <p>Stout fermented with German Cocoa Nibs featuring
-                    Pale Ale, Chocolate, Extra Dark Crystal, & Carafa 3 malts,
-                    Cluster hops, and
-                    Safale S-04 Dry ale yeast.</p>
-            </div>
-            <button onclick="showHidden('notesGermanChocolateStout')" class="w3-button w3-block">
-                <h6>Brewer's Notes</h6>
-            </button>
-            <div id="notesGermanChocolateStout" class="w3-hide w3-container">
-                <div class="w3-row">
-                    <div class="w3-half">
-                        <p>1.043 OG</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>1.012 FG</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>Brewed</br>12.27.20</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>Tapped</br>1.10.21</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Beer -->
-        <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
-            <h3>Bitburger Pilsner</h3>
-            <div class="w3-row">
-                <div class="w3-half">
-                    <p>4.8% ABV</p>
-                </div>
-                <div class="w3-half">
-                    <p>On Tap!</p>
-                </div>
-            </div>
-            <div>
-                <p> A traditional German style Pilsner!</br>Clean, Crisp, Carbonated</p>
-            </div>
-            <button onclick="showHidden('notesBitburgerPilsner')" class="w3-button w3-block">
-                <h6>Brewer's Notes</h6>
-            </button>
-            <div id="notesBitburgerPilsner" class="w3-hide w3-container">
-                <div class="w3-row">
-                    <div class="w3-half">
-                        <p>1.046 OG</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>1.010 FG</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>Brewed</br>Unknown</p>
-                    </div>
-                    <div class="w3-half">
-                        <p>Tapped</br>11.25.20</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Past Brews -->
@@ -217,6 +214,69 @@
     <!-- Row 1 of Past Beers -->
     <section class="w3-cell-row">
         <!-- w3-panel w3-row-padding  -->
+
+        <!-- Beer -->
+        <div class="w3-container w3-cell w3-mobile w3-center" style="width:25%">
+            <h3>German Chocolate Stout</h3>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <p>4.1% ABV</p>
+                </div>
+                <div class="w3-third">
+                    <p>1.043 OG</p>
+                </div>
+                <div class="w3-third">
+                    <p>1.012 FG</p>
+                </div>
+            </div>
+            <div>
+                <p>Stout fermented with German Cocoa Nibs featuring
+                    Pale Ale, Chocolate, Extra Dark Crystal, & Carafa 3 malts,
+                    Cluster hops, and
+                    Safale S-04 Dry ale yeast.</p>
+            </div>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <p>Brewed</br>12.27.20</p>
+                </div>
+                <div class="w3-third">
+                    <p>Tapped</br>1.10.21</p>
+                </div>
+                <div class="w3-third">
+                    <p>Kicked</br>4.17.21</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beer -->
+        <div class="w3-container w3-cell w3-mobile w3-center" style="width:33%">
+            <h3>Bitburger Pilsner</h3>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <p>4.8% ABV</p>
+                </div>
+                <div class="w3-third">
+                    <p>1.046 OG</p>
+                </div>
+                <div class="w3-third">
+                    <p>1.010 FG</p>
+                </div>
+            </div>
+            <div>
+                <p> A traditional German style Pilsner!</br>Clean, Crisp, Carbonated</p>
+            </div>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <p>Brewed</br>Unknown</p>
+                </div>
+                <div class="w3-third">
+                    <p>Tapped</br>11.25.20</p>
+                </div>
+                <div class="w3-third">
+                    <p>Kicked</br>4.16.21</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Beer -->
         <div class="w3-container w3-cell w3-mobile w3-center" style="width:33%">
@@ -280,6 +340,11 @@
             </div>
         </div>
 
+    </section>
+
+    <!-- Row 2 of Past Beers -->
+    <section class="w3-cell-row">
+
         <!-- Beer -->
         <div class="w3-container w3-cell w3-mobile w3-center" style="width:33%">
             <h3>As Lager We Both Shall Live</h3>
@@ -310,10 +375,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Row 2 of Past Beers -->
-    <section class="w3-cell-row">
 
         <!-- Beer -->
         <div class="w3-container w3-cell w3-mobile w3-center" style="width:33%">
@@ -378,6 +439,11 @@
             </div>
         </div>
 
+    </section>
+
+    <!-- Row 3 of Past Beers -->
+    <section class="w3-cell-row">
+
         <!-- Beer -->
         <div class="w3-container w3-cell w3-mobile w3-center" style="width:33%">
             <h3>Oktoberfest</h3>
@@ -408,6 +474,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- About -->
